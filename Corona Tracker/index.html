@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>COVID 19 Stats Worldwide</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="col s12">
+        <div class="card black center">
+          <div class="card-content white-text">
+            <h3>COVID19 Stats</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h4 class = "center">Worldwide Stats</h4>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card red center">
+          <div class="card-content white-text">
+            <h6 id = "cases"></h6>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card green center">
+          <div class="card-content white-text">
+            <h6 id = "recovered"></h6>
+          </div>
+        </div>
+      </div>
+          <div class="col s12 m4">
+        <div class="card black center">
+          <div class="card-content white-text">
+            <h6 id = "deaths"></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+      <ul class="collapsible">
+    <li>
+      <div class="center collapsible-header white lighten-1 card-content black-text">Display Growth (Tap to open or close)</div>
+      <div id="body" class="collapsible-body center">
+        <div id="chart_div"></div>
+      </div>
+    </li>
+    </ul>
+    
+    
+    <div class = "container">
+      <label for="selection">Select a country for Individual Country wise corona statistics</label>
+      <div class="input-field col s12">
+        <select id="selection" name="selection" class="browser-default">
+          <option value="" disabled selected>Select a Country</option>
+        </select>
+      </div>
+    </div>
+    
+    
+        <h4 id = "country" class = "center"></h4>
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card red center">
+          <div class="card-content white-text">
+            <h6 id = "country-cases">Select a Country</h6>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card green center">
+          <div class="card-content white-text">
+            <h6 id = "country-recovered">Select a Country</h6>
+          </div>
+        </div>
+      </div>
+          <div class="col s12 m4">
+        <div class="card black center">
+          <div class="card-content white-text">
+            <h6 id = "country-deaths">Select a Country</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class = "container">
+        <label for="selection">Made with love by theroyakash 2020</label>
+      </div>
+
+    <script src = "/script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
